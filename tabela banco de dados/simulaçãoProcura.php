@@ -12,15 +12,11 @@ $tabelaclientes =
   'Nome' => 'Davi',
   'Cidade' => 'Jundiaí',
   'Idade' => 17
-],
-3 => [
-    'Nome' => 'Fernando',
-    'Cidade' => 'Franco da Rocha',
-    'Idade' => 'Incríveis 43 aninhos'
-]
+  ]
   ];
 
-//Procurar na tabela de um banco de dados usando o id e o termo de procura
-  echo $tabelaclientes [1]['Cidade'];
-
-?>
+/*O primeiro elemento é uma array enquanto o segundo é uma variavel
+que vai receber o contador no caso ID*/
+foreach ($tabelaclientes as $contador => $ID){
+  echo "ID ".$contador."\nNome: ".$ID['Nome']."\n"."Cidade: ".$ID['Cidade']." \nIdade: ".$ID['Idade']."\n \n";
+}
