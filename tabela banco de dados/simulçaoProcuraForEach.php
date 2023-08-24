@@ -1,17 +1,22 @@
 <?php
-$matrix = [[1,2,9,4,5],[10,20,30,40,50],[100,200,300,400,500],[1000,2000,3000,4000,5000,[5000]]];
 
-for($i=0; $i < 4; $i++){
-  for($n = 0; $n < 4; $n ++){
-    if ($i==3 && $n==4){
-    echo "......ultimo vetor...... \n";
-    for($c=0; $c<4; $c++){
+$tabelaclientes = 
+  [
+1 => [
+  'Nome' => 'Fabrício',
+  'Cidade' => 'Jundiaí',
+  'Idade' => 17
+  ],
+  
+2 => [
+  'Nome' => 'Davi',
+  'Cidade' => 'Jundiaí',
+  'Idade' => 17
+  ]
+  ];
 
-    }
-    }
-      echo "posição matrix".$i." e posição dentro do vetor ".$n." e o conteudo é: ". $matriz[$i][$n]. PHP_EOL;
-  }
+/*O primeiro elemento é uma array enquanto o segundo é uma variavel
+que vai receber o contador no caso ID*/
+foreach ($tabelaclientes as $contador => $ID){
+  echo "ID ".$contador."\nNome: ".$ID['Nome']."\n"."Cidade: ".$ID['Cidade']." \nIdade: ".$ID['Idade']."\n \n";
 }
-$matrix[3][4][2]=null;
-echo "valor ".$matrix[3][4][0]." ";
-print_r($matrix);
