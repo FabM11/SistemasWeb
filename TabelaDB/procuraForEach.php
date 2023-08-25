@@ -16,7 +16,12 @@ $tabelaclientes =
   'Nome' => 'Davi',
   'Cidade' => 'Jundiaí',
   'Idade' => 17
-  ]
+  ],
+3 => [
+  'Nome' => 'Mariah',
+  'Cidade' => 'Jundiaí',
+  'Idade' => ''
+]
   ];
 
 /*O primeiro elemento é uma array enquanto o segundo é uma variavel

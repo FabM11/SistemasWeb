@@ -18,3 +18,10 @@ function change($string){
     echo(nl2br($string));
 }
 ?>
+
+<?php
+//colocar o arquivo de teste
+function Path($arquivo){
+    include_once('../'.$arquivo);
+}
+?>
