@@ -4,6 +4,14 @@ include_once('../html/functions.php');
 
 <?php
 
+//Array normal:
+//$Array = [01, 02, 03, 04, 05];
+//Posição    0   1   2   3   4
+
+//Array associativo:
+//$Array = ['Oi' => 01, 'Bom' => 02, 'Boa' => 03, 'Noite' => 04, 'Dia' => 05];
+//Posição        Oi          Bom          Boa           Noite         Dia
+
 $tabelaclientes = 
   [
 1 => [
