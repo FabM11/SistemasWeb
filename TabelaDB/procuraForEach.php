@@ -1,4 +1,8 @@
 <?php
+include_once('../html/functions.php');
+?>
+
+<?php
 
 $tabelaclientes = 
   [
@@ -18,5 +22,5 @@ $tabelaclientes =
 /*O primeiro elemento é uma array enquanto o segundo é uma variavel
 que vai receber o contador no caso ID*/
 foreach ($tabelaclientes as $contador => $ID){
-  echo "ID ".$contador."\nNome: ".$ID['Nome']."\n"."Cidade: ".$ID['Cidade']." \nIdade: ".$ID['Idade']."\n \n";
+  change("ID ".$contador."\nNome: ".$ID['Nome']."\n"."Cidade: ".$ID['Cidade']." \nIdade: ".$ID['Idade']."\n \n");
 }

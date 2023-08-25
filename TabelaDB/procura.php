@@ -1,4 +1,8 @@
 <?php
+include_once('../html/functions.php');
+?>
+
+<?php
 
 $tabelaclientes = 
   [
@@ -21,6 +25,6 @@ $tabelaclientes =
   ];
 
 //Procurar na tabela de um banco de dados usando o id e o termo de procura
-  echo $tabelaclientes [1]['Cidade'];
+  change($tabelaclientes [1]['Cidade']);
 
 ?>
