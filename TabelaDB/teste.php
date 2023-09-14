@@ -1,6 +1,6 @@
 <?php
-$tabelaclientes = 
-  [
+$tabelaclientes = array(
+  
 1 => [
   'Nome' => 'Fabrício',
   'Cidade' => 'Jundiaí',
@@ -17,18 +17,19 @@ $tabelaclientes =
   'Cidade' => 'Jundiaí',
   'Idade' => 19
 ]
-  ];
+  );
 /*O primeiro elemento é uma array enquanto o segundo é uma variavel
 que vai receber o contador no caso ID*/
 function Imprimir (array $tabelinha){
     $iu=$tabelinha;
-    print_r($iu);
+    //print_r($iu['teste']);
 foreach ($iu as $contador => $ID){
-    if(is_array($iu[$contador]) == true){
+    //print_r ($iu[$contador]);
+    if(is_array($contador[$ID]) == true){
         Imprimir($iu[$contador]);
     }
     else{
-  echo("ID ".$iu[$contador]."\nNome: ".$iu[$contador][$ID]."\n"."Cidade: ".$iu[$contador][$ID]." \nIdade: ".$iu[$contador][$ID]."\n \n");
+  echo("ID ".$ID."\nNome: ".$contador[$ID]."\n"."Cidade: ".$contador[$ID]." \nIdade: ".$contador[$ID]."\n \n");
     }
 }
 }
