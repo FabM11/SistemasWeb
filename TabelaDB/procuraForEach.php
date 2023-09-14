@@ -16,7 +16,7 @@ $tabelaclientes =
   'Nome' => 'Davi',
   'Cidade' => 'Jundiaí',
   'Idade' => 17
-  ],
+  ], 
 3 => [
   'Nome' => 'Mariah',
   'Cidade' => 'Jundiaí',

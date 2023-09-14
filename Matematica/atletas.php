@@ -25,5 +25,5 @@ foreach($atletas as $id => $idade){
 }
 
 //Média
-change ($soma/$id);
+change($soma/$id);
 ?>
